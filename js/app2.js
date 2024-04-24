@@ -616,7 +616,7 @@ function check() {
     $("#undobtn").prop("disabled", true);
     $("#valuebtn").prop("disabled", false);
     $(".header-mid").css({
-      "background-image": "url(./imgs/winner.gif)",
+      "background-image": "url(./imgs/winner_once.gif)",
     });
     freez_screen();
     firstLine.html(
