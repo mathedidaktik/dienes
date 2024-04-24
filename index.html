@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Ahmad Naveed Nassruddin" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style2.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
+    <script
+      src="./js/jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js"
+      defer
+    ></script>
+    <script
+      src="./js/jquery-ui-touch-punch-master/jquery.ui.touch-punch.js"
+      defer
+    ></script>
+
+    <script src="./js/app2.js" defer></script>
+    <title>Ziehen und ablegen</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-left">
+          <button class="btn" id="valuebtn" onclick="start()">Start</button>
+          <button
+            class="btn"
+            id="checkbtn"
+            onclick="check()"
+            title="überprüfen und sortieren"
+          >
+            Prüfen
+          </button>
+          <button
+            class="btn"
+            id="undobtn"
+            onclick="reset()"
+            title="Alles löschen"
+          >
+            Alles löschen
+          </button>
+        </div>
+        <div class="header-mid" id="shownumber">
+          <p class="black-line-big" id="first-line"></p>
+          <p class="color-line-big" id="randomNumber"></p>
+          <p class="black-line-mid" id="second-line"></p>
+        </div>
+        <div class="header-right">
+          <button
+            class="btn"
+            id="readbtn"
+            onclick="read_text()"
+            title="vorlesen"
+          >
+            <img class="speaker" src="./imgs/speak-3-48.png" alt="speaker" />
+          </button>
+        </div>
+      </div>
+      <div class="main">
+        <div class="leftSide">
+          <div class="dropBox" id="dropbox">
+            <div class="up" id="up">
+              <div class="dropBox-merge" id="dropbox-merge">
+                <img
+                  src="./imgs/MergeImg.png"
+                  alt=""
+                  class="merge-img"
+                  unselectable="on"
+                />
+              </div>
+              <div class="dropBox-delete" id="dropBox-delete">
+                <img src="./imgs/recycle-bin.png" alt="" class="recycle-bin" />
+              </div>
+            </div>
+            <div class="down" id="down"></div>
+          </div>
+        </div>
+        <div class="rightSide">
+          <div class="dragBox">
+            <img class="img1" id="imgEiner" src="./imgs/Box1.png" alt="cube1" />
+          </div>
+          <div class="dragBox">
+            <img
+              class="img2"
+              id="imgZehner"
+              src="./imgs/Box10.png"
+              alt="cube10"
+            />
+          </div>
+          <div class="dragBox">
+            <img
+              class="img3"
+              id="imgHunderter"
+              src="./imgs/Box100.png"
+              alt="cube100"
+            />
+          </div>
+          <div class="dragBox">
+            <img
+              class="img4"
+              id="imgTausender"
+              src="./imgs/Box1000.png"
+              alt="cube1000"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
