@@ -622,10 +622,10 @@ function check() {
     firstLine.html(
       `<span class="headerText"> Sehr gut! Du hast die richtige Zahl dargestellt.</span>`
     );
-    random_number.html(`<span style="color:#73787d" class="headerText">Die Zahl <span style="color:yellowgreen" class="headerText"> ${random}</span> besteht aus <span style="color:yellowgreen" class="headerText"> ${counter_1000_total}</span> Tausender
-    <span style="color:yellowgreen" class="headerText"> ${counter_100_total}</span> Hunderter
-    <span style="color:yellowgreen" class="headerText">${counter_10_total}</span> Zehner
-    <span style="color:yellowgreen" class="headerText">${counter_1_total}</span> Einer</span>`);
+    random_number.html(`<span style="color:#73787d" class="headerText">Dafür hast du <span style="color:yellowgreen" class="headerText">${counter_1000_total}</span> Tausender
+    <span style="color:yellowgreen" class="headerText">${counter_100_total}</span> Hunderter
+    <span style="color:yellowgreen" class="headerText">${counter_10_total}</span> Zehner 
+    <span style="color:yellowgreen" class="headerText">${counter_1_total}</span> Einer verwendet.</span>`);
     secondLine.html(
       `<span class="headerText"> Klicke auf <span style="color:yellowgreen" class="headerText"> Start</span>, um eine neue Zahl zu bekommen.</span>`
     );
