@@ -164,6 +164,7 @@ body{
   #undobtn {
     background-color: var(--undo-button-color);
     font-size: 11px;
+    line-height:100%;
   }
   .up{
     display: flex;
@@ -195,6 +196,7 @@ body{
     #undobtn {
       background-color: var(--undo-button-color);
       font-size: 19px;
+      line-height:100%;
     }
     .up{
       display: flex;
@@ -225,6 +227,8 @@ body{
   #undobtn {
     background-color: var(--undo-button-color);
     font-size: 25px;
+    line-height:100%;
+    
   }
   .up{
     display: flex;
