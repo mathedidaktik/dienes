@@ -648,7 +648,7 @@ function check() {
     <span style="color:yellowgreen" class="headerText">${counter_10_total}</span> Zehner 
     <span style="color:yellowgreen" class="headerText">${counter_1_total}</span> Einer verwendet.</span>`);
     secondLine.html(
-      yellowgreen`<span class="headerText">Bündel und lege die Zahl <span style="color:yellowgreen" class="headerText"> ${random}</span>  mit weniger Teilen.</span>`
+      `<span class="headerText">Bündel und lege die Zahl <span style="color:yellowgreen" class="headerText"> ${random}</span>  mit weniger Teilen.</span>`
     );
   } else {
     // if the answer is not correct give the user a feedback and the user to try again
