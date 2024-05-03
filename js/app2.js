@@ -626,10 +626,13 @@ function check() {
     firstLine.html(
       `<span class="headerText"> Sehr gut! Du hast die richtige Zahl dargestellt.</span>`
     );
-    random_number.html(`<span style="color:#73787d" class="headerText">Dafür hast du <span style="color:yellowgreen" class="headerText">${counter_1000_total}</span> Tausender
-    <span style="color:yellowgreen" class="headerText">${counter_100_total}</span> Hunderter
-    <span style="color:yellowgreen" class="headerText">${counter_10_total}</span> Zehner 
-    <span style="color:yellowgreen" class="headerText">${counter_1_total}</span> Einer verwendet.</span>`);
+    random_number.html(`
+        <span style="color:#73787d" class="headerText">Dafür hast du
+            ${maxValue >= 1000 ? `<span style="color:yellowgreen" class="headerText">${counter_1000_total}</span> Tausender` : ''}
+            ${maxValue >= 100 ? `<span style="color:yellowgreen" class="headerText">${counter_100_total}</span> Hunderter` : ''}
+            ${maxValue >= 10 ? `<span style="color:yellowgreen" class="headerText">${counter_10_total}</span> Zehner` : ''}
+            <span style="color:yellowgreen" class="headerText">${counter_1_total}</span> Einer
+        verwendet.</span>`);
     secondLine.html(
       `<span class="headerText"> Klicke auf <span style="color:yellowgreen" class="headerText"> Start</span>, um eine neue Zahl zu bekommen.</span>`
     );
@@ -647,10 +650,13 @@ function check() {
     firstLine.html(
       `<span class="headerText"> Du hast die richtige Zahl <span style="color:yellowgreen" class="headerText"> ${random}</span> dargestellt.</span>`
     );
-    random_number.html(`<span style="color:#73787d" class="headerText">Dafür hast du <span style="color:yellowgreen" class="headerText">${counter_1000_total}</span> Tausender
-    <span style="color:yellowgreen" class="headerText">${counter_100_total}</span> Hunderter
-    <span style="color:yellowgreen" class="headerText">${counter_10_total}</span> Zehner 
-    <span style="color:yellowgreen" class="headerText">${counter_1_total}</span> Einer verwendet.</span>`);
+    random_number.html(`
+        <span style="color:#73787d" class="headerText">Dafür hast du
+            ${maxValue >= 1000 ? `<span style="color:yellowgreen" class="headerText">${counter_1000_total}</span> Tausender` : ''}
+            ${maxValue >= 100 ? `<span style="color:yellowgreen" class="headerText">${counter_100_total}</span> Hunderter` : ''}
+            ${maxValue >= 10 ? `<span style="color:yellowgreen" class="headerText">${counter_10_total}</span> Zehner` : ''}
+            <span style="color:yellowgreen" class="headerText">${counter_1_total}</span> Einer
+        verwendet.</span>`);
     secondLine.html(
       `<span class="headerText">Bündel und lege die Zahl <span style="color:yellowgreen" class="headerText"> ${random}</span>  mit weniger Teilen.</span>`
     );
@@ -660,10 +666,13 @@ function check() {
     firstLine.html(
       `<span class="headerText"> Du hast die Zahl <span style="color:yellowgreen" class="headerText"> ${result}</span> dargestellt.</span>`
     );
-    random_number.html(`<span style="color:#73787d" class="headerText">Dafür hast du <span style="color:yellowgreen" class="headerText">${counter_1000_total}</span> Tausender
-    <span style="color:yellowgreen" class="headerText">${counter_100_total}</span> Hunderter
-    <span style="color:yellowgreen" class="headerText">${counter_10_total}</span> Zehner
-    <span style="color:yellowgreen" class="headerText">${counter_1_total}</span> Einer verwendet.</span>`);
+    random_number.html(`
+        <span style="color:#73787d" class="headerText">Dafür hast du
+            ${maxValue >= 1000 ? `<span style="color:yellowgreen" class="headerText">${counter_1000_total}</span> Tausender` : ''}
+            ${maxValue >= 100 ? `<span style="color:yellowgreen" class="headerText">${counter_100_total}</span> Hunderter` : ''}
+            ${maxValue >= 10 ? `<span style="color:yellowgreen" class="headerText">${counter_10_total}</span> Zehner` : ''}
+            <span style="color:yellowgreen" class="headerText">${counter_1_total}</span> Einer
+        verwendet.</span>`);
     secondLine.html(
       `<span class="headerText">Du solltest aber die Zahl <span style="color:yellowgreen" class="headerText"> ${random}</span> darstellen. Versuche es noch einmal.</span>`
     );
