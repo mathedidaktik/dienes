@@ -87,12 +87,16 @@ var delete_ids = [
   "cloneElement-1000-dropBox-delete",
 ];
 
+var ZehnerId = document.querySelector("#imgZehner");
 var TausenderId = document.querySelector("#imgTausender");
 var HunderterId = document.querySelector("#imgHunderter");
+if (maxValue < 10) {
+  ZehnerId.style.display = "none";
+}
 if (maxValue < 100) {
   HunderterId.style.display = "none";
-  TausenderId.style.display = "none";
-} else if (maxValue < 1000) {
+}
+if (maxValue < 1000) {
   TausenderId.style.display = "none";
 }
 
