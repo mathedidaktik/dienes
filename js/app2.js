@@ -1,12 +1,14 @@
-// get and set Url values
-let minValue = 0;
-let maxValue = 0;
-const queryString = window.location.search;
-const urlSearchParams = new URLSearchParams(queryString);
-for (const [key, value] of urlSearchParams) {
-  minValue = urlSearchParams.get("min");
-  maxValue = urlSearchParams.get("max");
-}
+// URLSearchParams holen
+const urlSearchParams = new URLSearchParams(window.location.search);
+
+// Standardwerte setzen
+let minValue = 0;    // Standardwert für min
+let maxValue = 10000; // Standardwert für max
+
+// Werte aus der URL holen, falls vorhanden
+minValue = urlSearchParams.get("min") || minValue;
+maxValue = urlSearchParams.get("max") || maxValue;
+
 //check for negative numbers in URL  / min should always be smaller than max
 if (parseInt(minValue) < 0 || parseInt(minValue) > parseInt(maxValue)) {
   alert(
