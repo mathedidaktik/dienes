@@ -440,4 +440,15 @@ button {
       inset 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 }
-
+div.infos {
+  font-size: 12px;
+}
+div.infos button{
+  font-size: 12px;
+  font-weight: bold;
+  float:right;
+}
+#footer {
+  position:fixed;
+  bottom: 20px;
+}
